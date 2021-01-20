@@ -1,0 +1,27 @@
+#mainList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.group0 {
+    background-color: black;
+    color: white;
+}
+
+.group1 {
+    background-color: darkgray;
+}
+
+.group2 {
+    background-color: gray;
+}
+
+.group3 {
+    background-color: lightgray;
+}
+
+.red {
+    background-color: red;
+    color: black;
+}
