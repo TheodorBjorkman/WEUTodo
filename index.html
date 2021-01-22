@@ -13,9 +13,14 @@
     <header>
     </header>
     <main>
-        <form id="mainList" onSubmit='document.getElementById("inputButton").click(); 
-        return false; '>
-        </form>
+        <div class="parent">
+            <form class="mainList" id="listNormal" onSubmit='document.getElementById("inputButton").click(); 
+            return false; '>
+            </form>
+            <form class="mainList" id="listRed" onSubmit='document.getElementById("inputButton").click(); 
+            return false; '>
+            </form>
+        </div>
         <form id="UI" onSubmit='document.getElementById("inputButton").click(); 
         return false; '>
             <label>Important<input type="checkbox" id="red"></label>

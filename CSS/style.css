@@ -1,27 +1,29 @@
-#mainList {
+.mainList {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 
-.group0 {
-    background-color: black;
+.lable {
+    outline: black;
+    outline-style: auto;
+}
+
+.lableRed {
+    background-color: rgb(212, 27, 27);
     color: white;
+    outline: black;
+    outline-style: auto;
 }
 
-.group1 {
-    background-color: darkgray;
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
 }
 
-.group2 {
-    background-color: gray;
-}
-
-.group3 {
-    background-color: lightgray;
-}
-
-.red {
-    background-color: red;
-    color: black;
+.smol {
+    height: 5px;
 }
