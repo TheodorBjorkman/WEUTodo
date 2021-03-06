@@ -26,8 +26,14 @@
             <input type="text" id="input">
             <input type="button" name="inputButton" id="inputButton" value="Add" onclick="addToList()">
             <input type="button" value="Clear All" onclick="clearAll()">
-            <label><input type="checkbox" id="animation" checked>Animation</label>
             <input type="button" value="Mode" onclick="mode()">
+            <label><input type="checkbox" id="animation" checked>Animation</label>
+            <br>
+            <br>
+            <label><input type="color" class="colorpicker" id="back" onchange="changeBackgroundColor()" value="#d3d3d3"> Background color</label>
+            <br>
+            <br>
+            <label><input type="color" class="colorpicker" id="fore" onchange="changeForegroundColor()" value="#000000"> Text color</label>
         </form>
     </main>
     <footer>

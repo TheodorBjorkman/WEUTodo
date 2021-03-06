@@ -112,3 +112,11 @@ function mode() {
     console.log(e);
     document.getElementById("parent").innerHTML = e;
 }
+
+function changeBackgroundColor() {
+    document.body.style.backgroundColor = document.getElementById('back').value;
+}
+
+function changeForegroundColor() {
+    document.body.style.color = document.getElementById('fore').value;
+}

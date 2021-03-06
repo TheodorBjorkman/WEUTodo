@@ -1,5 +1,6 @@
 body {
-    background-color: lightgray;
+    background-color: #d3d3d3;
+    color: #000000;
 }
 
 .mainList {
@@ -10,7 +11,7 @@ body {
 }
 
 .itemRed {
-    background-color: rgba(241, 245, 0, 0.247);
+    background-color: #f1f500;
 }
 
 li:hover {
@@ -24,6 +25,10 @@ li:hover {
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 0px;
+}
+
+.colorpicker {
+    height: 24px;
 }
 
 .smol {
