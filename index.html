@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./JS/script.js"></script>
+    <link rel="icon" href="https://static.thenounproject.com/png/432907-200.png">
     <title>Todo</title>
 </head>
 
@@ -13,25 +14,24 @@
     <header>
     </header>
     <main>
-        <div class="parent">
-            <form class="mainList" id="listNormal" onSubmit='document.getElementById("inputButton").click(); 
-            return false; '>
-            </form>
-            <form class="mainList" id="listRed" onSubmit='document.getElementById("inputButton").click(); 
-            return false; '>
-            </form>
+        <div id="parent">
+            <ul class="mainList" id="listNormal">
+            </ul id="wa">
+            <ul class="mainList" id="listImportant">
+            </ul id="wo">
         </div>
         <form id="UI" onSubmit='document.getElementById("inputButton").click(); 
-        return false; '>
-            <label>Important<input type="checkbox" id="red"></label>
+        return false; ' onload='fetch()'>
+            <label class="itemRed">Important<input type="checkbox" id="red"></label>
             <input type="text" id="input">
             <input type="button" name="inputButton" id="inputButton" value="Add" onclick="addToList()">
-            <input type="button" value="Clear Selected" onclick="clearSelected()">
             <input type="button" value="Clear All" onclick="clearAll()">
+            <label><input type="checkbox" id="animation" checked>Animation</label>
+            <input type="button" value="Mode" onclick="mode()">
         </form>
     </main>
     <footer>
     </footer>
 </body>
-
+<script>fetch();</script>
 </html>
